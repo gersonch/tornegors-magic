@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				display: ['Rajdhani', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,6 +66,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				tornegors: {
+					dark: '#111827',
+					darkgray: '#1f2937',
+					orange: '#f97316',
+					purple: '#4c1d95',
+					light: '#f9fafb',
 				}
 			},
 			borderRadius: {
@@ -84,11 +96,34 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-orange': {
+					'0%, 100%': {
+						opacity: '1'
+					},
+					'50%': {
+						opacity: '0.7'
+					}
+				},
+				'slide-in': {
+					'0%': {
+						transform: 'translateY(100%)'
+					},
+					'100%': {
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-orange': 'pulse-orange 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+				'slide-in': 'slide-in 0.4s ease-out'
+			},
+			backgroundImage: {
+				'hero-pattern': 'linear-gradient(to bottom right, rgba(79, 70, 229, 0.2), rgba(249, 115, 22, 0.2))',
+				'card-gradient': 'linear-gradient(to bottom right, rgba(31, 41, 55, 0.8), rgba(17, 24, 39, 0.8))',
+				'orange-glow': 'radial-gradient(circle, rgba(249, 115, 22, 0.2) 0%, transparent 70%)',
 			}
 		}
 	},
