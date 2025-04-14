@@ -1,0 +1,7 @@
+Go to Authentication Settings: Find the "Authentication" section in the sidebar.
+
+Enable Leaked Password Protection: Look for the option related to "Leaked Password Protection" or "Compromised Passwords" and toggle it to enable.
+
+Save Changes: Ensure to save any changes made to the authentication settings.
+
+By enabling this feature, you will significantly improve the security of user accounts by preventing the use of known compromised passwords.
