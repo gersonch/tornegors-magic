@@ -22,3 +22,32 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+bun.lock
+
+# Entornos virtuales y configuraciones locales
+.env
+.env.local
+.env.*.local
+
+# Archivos de compilación y caché
+.cache/
+build/
+out/
+*.tsbuildinfo
+
+# Archivos de configuración específicos del sistema operativo
+Thumbs.db
+desktop.ini
+
+# Archivos de configuración de herramientas
+.eslintcache
+.stylelintcache
+
+# Archivos de configuración de paquetes
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Archivos de pruebas y cobertura
+coverage/
+*.lcov
